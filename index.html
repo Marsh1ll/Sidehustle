@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Week 4 Task</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="application/javascript">
+            function validateForm() {
+                let x = document.[myForm][fullname].value;
+                if(x == "" || x == null) {
+                    alert("Please provide your name");
+                    return false
+                }
+                validateForm()
+            }
+        </script>
+    </head>
+    <body>
+        <h1></h1>
+        <div class="banner-area">
+            <div class="wrapper">
+                <div class="navigation">
+                    <div class="logo">
+                        
+                    </div>
+                        <nav>
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Portfolio</a>
+                            <a href="#">Services</a>
+                        </nav>
+                </div>
+
+                <div class="banner-text">
+                    <div class="text-area">
+                        <h2>CodeGuru</h2>
+                        <h3>Web Designer</h3>
+                        <p>We are committed to providing you with the highest quality webpages for all your business needs</p>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Form">
+            <form name="myForm" action="" target="_blank" onsubmit="return
+            validateForm()">
+                
+                    <p id="name">
+                        <label for="fullname">Name</label><br>
+                        <input type="text" name="fullname "id= fullname placeholder="Your Name" required>
+                    </p>
+    
+                    <p id="email">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email "id= email placeholder="Your Email Address" required>
+                    </p>
+                    
+                    <p id="button">
+                        <input type="submit" value="Submit">
+                    </p>
+    
+            </form>
+        </div>
+       
+    </body>
+</html>
