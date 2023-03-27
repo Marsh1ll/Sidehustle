@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Week 4 Task</title>
         <link rel="stylesheet" href="style.css">
-        <script type="application/javascript">
+        <script type="text/javascript">
             function validateForm() {
                 let x = document.[myForm][fullname].value;
                 if(x == "" || x == null) {
@@ -43,8 +43,7 @@
             </div>
         </div>
         <div class="Form">
-            <form name="myForm" action="" target="_blank" onsubmit="return
-            validateForm()">
+            <form name="myForm" action="" target="_blank" onsubmit="return validateForm()">
                 
                     <p id="name">
                         <label for="fullname">Name</label><br>
@@ -53,7 +52,7 @@
     
                     <p id="email">
                         <label for="email">Email Address</label><br>
-                        <input type="email" name="email "id= email placeholder="Your Email Address" re>
+                        <input type="email" name="email "id= email placeholder="Your Email Address" required>
                     </p>
                     
                     <p id="button">
